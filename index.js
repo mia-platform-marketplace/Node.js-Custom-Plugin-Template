@@ -22,7 +22,7 @@ const customService = require('@mia-platform/custom-plugin-lib')({
 module.exports = customService(async function index(service) {
 
   /*
-  * Insert here your code
+  * Insert your code here.
   */
 
 })
