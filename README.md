@@ -38,8 +38,6 @@ npm start
 
 After that you will have the service exposed on your machine.
 
-## Configuring the Service
-<TO COMPLETE>
 
 ## Contributing
 To contribute to the project, please be mindful for this simple rules:

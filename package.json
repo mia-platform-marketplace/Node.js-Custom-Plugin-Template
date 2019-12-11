@@ -23,7 +23,7 @@
     "version": "npm run update-docker-version && rm -fr Dockerfile.bck && git add Dockerfile"
   },
   "dependencies": {
-    "@mia-platform/custom-plugin-lib": "^1.0.5"
+    "@mia-platform/custom-plugin-lib": "^1.1.1"
   },
   "devDependencies": {
     "@mia-platform/eslint-config-mia": "^2.0.1",

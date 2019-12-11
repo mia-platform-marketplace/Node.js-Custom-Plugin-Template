@@ -16,8 +16,7 @@
 /* eslint require-await: 0 */
 'use strict'
 
-const customService = require('@mia-platform/custom-plugin-lib')({
-})
+const customService = require('@mia-platform/custom-plugin-lib')({})
 
 module.exports = customService(async function index(service) {
 
