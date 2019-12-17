@@ -42,8 +42,8 @@ t.test('%CUSTOM_PLUGIN_SERVICE_NAME%', async t => {
   })
 
   /*
-  * Insert your tests here.
-  */
+   * Insert your tests here.
+   */
 
   t.end()
 })
