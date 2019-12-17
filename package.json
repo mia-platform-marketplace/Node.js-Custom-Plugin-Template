@@ -1,0 +1,42 @@
+{
+  "name": "%CUSTOM_PLUGIN_SERVICE_NAME%",
+  "version": "0.1.0",
+  "description": "%CUSTOM_PLUGIN_SERVICE_DESCRIPTION%",
+  "license": "SEE LICENSE IN LICENSE",
+  "author": "%CUSTOM_PLUGIN_CREATOR_USERNAME%",
+  "contributors": [],
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "%GITLAB_BASE_URL%/%CUSTOM_PLUGIN_PROJECT_FULL_PATH%.git"
+  },
+  "scripts": {
+    "checkonly": "! grep -R '\\.only' tests/",
+    "coverage": "npm run unit -- --coverage-report=text-summary",
+    "postcoverage": "tap --coverage-report=lcov --no-browser",
+    "lint": "eslint . --ignore-path=.gitignore",
+    "start": "lc39 index.js",
+    "start:local": "npm start -- --env-path ./default.env",
+    "test": "npm run lint && npm run unit && npm run checkonly",
+    "update-docker-version": "sed -i.bck \"s|version=\\\"[0-9]*\\.[0-9]*\\.[0-9]*.*\\\"|version=\\\"${npm_package_version}\\\"|\" Dockerfile",
+    "unit": "tap -b tests/*.test.js",
+    "version": "npm run update-docker-version && rm -fr Dockerfile.bck && git add Dockerfile"
+  },
+  "dependencies": {
+    "@mia-platform/custom-plugin-lib": "^1.1.1"
+  },
+  "devDependencies": {
+    "@mia-platform/eslint-config-mia": "^2.0.1",
+    "eslint": "^6.7.1",
+    "nock": "^11.7.0",
+    "pre-commit": "^1.2.2",
+    "tap": "^14.10.1"
+  },
+  "engines": {
+    "node": ">=10"
+  },
+  "private": true,
+  "eslintConfig": {
+    "extends": "@mia-platform/eslint-config-mia"
+  }
+}
