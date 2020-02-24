@@ -17,11 +17,11 @@
 'use strict'
 
 const customService = require('@mia-platform/custom-plugin-lib')()
-
+/* eslint-disable-next-line no-unused-vars */
 module.exports = customService(async function index(service) {
 
   /*
-  * Insert your code here.
-  */
+   * Insert your code here.
+   */
 
 })
