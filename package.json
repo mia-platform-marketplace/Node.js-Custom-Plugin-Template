@@ -19,8 +19,9 @@
     "start:local": "npm start -- --env-path ./default.env",
     "test": "npm run lint && npm run unit && npm run checkonly",
     "update-docker-version": "sed -i.bck \"s|version=\\\"[0-9]*\\.[0-9]*\\.[0-9]*.*\\\"|version=\\\"${npm_package_version}\\\"|\" Dockerfile",
+    "update-changelog": "node ./scripts/update-changelog.js ${npm_package_version}",
     "unit": "tap -b tests/*.test.js",
-    "version": "npm run update-docker-version && rm -fr Dockerfile.bck && git add Dockerfile"
+    "version": "npm run update-changelog && npm run update-docker-version && rm -fr Dockerfile.bck && git add CHANGELOG.md Dockerfile"
   },
   "dependencies": {
     "@mia-platform/custom-plugin-lib": "^1.1.1"
