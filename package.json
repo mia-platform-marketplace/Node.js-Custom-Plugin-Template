@@ -1,5 +1,5 @@
 {
-  "name": "%CUSTOM_PLUGIN_SERVICE_NAME%",
+  "name": "CUSTOM_PLUGIN_SERVICE_NAME",
   "version": "0.1.0",
   "description": "%CUSTOM_PLUGIN_SERVICE_DESCRIPTION%",
   "license": "SEE LICENSE IN LICENSE",
