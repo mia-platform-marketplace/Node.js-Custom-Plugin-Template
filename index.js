@@ -15,7 +15,7 @@
  */
 /* eslint require-await: 0 */
 'use strict'
-
+// Filippo test
 const customService = require('@mia-platform/custom-plugin-lib')()
 /* eslint-disable-next-line no-unused-vars */
 module.exports = customService(async function index(service) {
