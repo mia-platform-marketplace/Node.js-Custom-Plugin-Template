@@ -5,9 +5,9 @@ const { readFileSync, writeFileSync } = require('fs')
 
 function getISODateStringFrom(aJSDate) {
   return aJSDate
-  .toISOString()
-  .split('T')
-  .shift()
+    .toISOString()
+    .split('T')
+    .shift()
 }
 
 function getNewContentForCHANGELOG({ aSemVerString, anISODateString }) {
