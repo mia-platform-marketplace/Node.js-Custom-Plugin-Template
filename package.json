@@ -1,15 +1,9 @@
 {
-  "name": "%CUSTOM_PLUGIN_SERVICE_NAME%",
+  "name": "mia_template_service_name_placeholder",
   "version": "0.1.0",
   "description": "%CUSTOM_PLUGIN_SERVICE_DESCRIPTION%",
   "license": "SEE LICENSE IN LICENSE",
-  "author": "%CUSTOM_PLUGIN_CREATOR_USERNAME%",
-  "contributors": [],
   "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "%GITLAB_BASE_URL%/%CUSTOM_PLUGIN_PROJECT_FULL_PATH%.git"
-  },
   "scripts": {
     "checkonly": "! grep -R '\\.only' tests/",
     "coverage": "npm run unit -- --coverage-report=text-summary",
@@ -28,7 +22,7 @@
   },
   "devDependencies": {
     "@mia-platform/eslint-config-mia": "^3.0.0",
-    "eslint": "^7.0.0",
+    "eslint": "^7.1.0",
     "nock": "^12.0.3",
     "pre-commit": "^1.2.2",
     "tap": "^14.10.7"

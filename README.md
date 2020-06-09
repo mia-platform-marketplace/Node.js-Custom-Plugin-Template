@@ -50,10 +50,10 @@ To contribute to the project, please be mindful for this simple rules:
 ## Run the Docker Image
 If you are interested in the docker image you can get one and run it locally with this commands:
 ```shell
-docker pull %NEXUS_HOSTNAME%/%CUSTOM_PLUGIN_IMAGE_NAME%:latest
+docker pull %NEXUS_HOSTNAME%/mia_template_image_name_placeholder:latest
 set -a
 source .env
-docker run --name %CUSTOM_PLUGIN_SERVICE_NAME% \
+docker run --name mia_template_service_name_placeholder \
   -e USERID_HEADER_KEY=${USERID_HEADER_KEY} \
   -e GROUPS_HEADER_KEY=${GROUPS_HEADER_KEY} \
   -e CLIENTTYPE_HEADER_KEY=${CLIENTTYPE_HEADER_KEY} \
@@ -62,7 +62,7 @@ docker run --name %CUSTOM_PLUGIN_SERVICE_NAME% \
   -e LOG_LEVEL=trace \
   -p 3000:3000 \
   --detach \
-  %NEXUS_HOSTNAME%/%CUSTOM_PLUGIN_IMAGE_NAME%
+  %NEXUS_HOSTNAME%/mia_template_image_name_placeholder
 ```
 
 [pipeline]: %GITLAB_BASE_URL%/%CUSTOM_PLUGIN_PROJECT_FULL_PATH%/badges/master/pipeline.svg

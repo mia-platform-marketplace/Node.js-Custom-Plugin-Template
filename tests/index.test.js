@@ -27,7 +27,7 @@ async function setupFastify(envVariables) {
   return fastify
 }
 
-t.test('%CUSTOM_PLUGIN_SERVICE_NAME%', async t => {
+t.test('mia_template_service_name_placeholder', async t => {
   // silent => trace for enabliing logs
   const fastify = await setupFastify({
     USERID_HEADER_KEY: 'userid',
