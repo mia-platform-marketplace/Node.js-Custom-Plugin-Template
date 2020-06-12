@@ -104,16 +104,20 @@ Now we need to choose a path for our endpoint and to connect this endpoint to ou
 After having created an endpoint to your microservice you should save the changes that you have done to your project in the DevOps console, in a similar way to what we have previously done after the microservice creation.
 
 Once all the changes that we have made are saved, we are now able to deploy our project through the DevOps Console. Go to the **Deploy** area of the DevOps Console.  
-Once here select the environment and the branch you have worked on. When the deploy process is finished you will receveive a pop-up message that will inform you.  
+Once here select the environment and the branch you have worked on and confirm your choices pressing on the *deploy* button. When the deploy process is finished you will receveive a pop-up message that will inform you.  
 Step 5 of [Microservice from template - Get started](https://docs.mia-platform.eu/development_suite/api-console/api-design/custom_microservice_get_started/) section of Mia-Platform documentation will explain in detail how to correctly deploy your project.
 
 Now, if you launch the following command on your terminal:
 
-`curl <YOUR_PROJECT_HOST>/say-hello/hello`
+```shell
+curl <YOUR_PROJECT_HOST>/say-hello/hello
+```
 
 (remember to replace `<YOUR_PROJECT_HOST>` with the real host of your project)  
 you should see the following message:
 
-`{"status":200,"message":"Hello World"}`
+```json
+{"status":200,"message":"Hello World"}
+```
 
 Congratulations! You have successfully learnt how to modify a blank template into an hello-world node.js microservice!
