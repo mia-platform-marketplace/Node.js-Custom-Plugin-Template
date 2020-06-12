@@ -21,7 +21,7 @@ Then, fill the other required fields and confirm that you want to create a micro
 
 It is important to know that the microservice that we have just created is not saved yet on the DevOps Console. It is not essential to save the changes that we have made, since we will later make other modifications inside of our project in the DevOps Console.  
 If you decide to save your changes now remember to choose a meaningful title for your commit (e.g "my_node_service_name_creation"). After some seconds you will be prompted with a popup message which confirms that you have successfully saved all your changes.  
-A more detailed description on how to create and save a Microservice can be found in [Microservice from template - Get started](https://docs.mia-platform.eu/development_suite/api-console/api-design/custom_microservice_get_started/) section of Mia-Platform documentation.
+A more detailed description on how to create and save a Microservice can be found in [Microservice from template - Get started](https://docs.mia-platform.eu/development_suite/api-console/api-design/custom_microservice_get_started/#2-service-creation) section of Mia-Platform documentation.
 
 After having created your first microservice (based on *Node.js template*) you will be able to access to its git repository ( this functionality is present only in microservices created from Examples and Templates). Inside this repository you will find an [index.js](https://github.com/mia-platform-marketplace/Node.js-Custom-Plugin-Template/blob/master/index.js) file with the following lines of code:
 
@@ -96,7 +96,7 @@ Searching for the defined route: **/hello** through a **GET** request, we will e
 
 After commiting these changes to your repository, we can go back to Mia Platform DevOps Console.
 
-In order to access to our new microservice it is necessary to create an endpoint to it. Step 3 of [Microservice from template - Get started](https://docs.mia-platform.eu/development_suite/api-console/api-design/custom_microservice_get_started/) section of Mia-Platform documentation will explain in detail how to create an endpoint from the DevOps Console.
+In order to access to our new microservice it is necessary to create an endpoint to it. Step 3 of [Microservice from template - Get started](https://docs.mia-platform.eu/development_suite/api-console/api-design/custom_microservice_get_started/#3-creating-the-endpoint) section of Mia-Platform documentation will explain in detail how to create an endpoint from the DevOps Console.
 
 In particular, in this walkthrough we will create an endpoint to our *my-node-service-name*. To do so, from the Design area of your project select "Endpoints" on the menu on the left sidebar and then create a new endpoint.  
 Now we need to choose a path for our endpoint and to connect this endpoint to our microservice. Give to your endpoint the following path: **say-hello**. Then, specify that you want to connect your endpoint to a microservice and, finally, select *my-node-service-name*.
@@ -105,7 +105,7 @@ After having created an endpoint to your microservice you should save the change
 
 Once all the changes that we have made are saved, we are now able to deploy our project through the DevOps Console. Go to the **Deploy** area of the DevOps Console.  
 Once here select the environment and the branch you have worked on and confirm your choices pressing on the *deploy* button. When the deploy process is finished you will receveive a pop-up message that will inform you.  
-Step 5 of [Microservice from template - Get started](https://docs.mia-platform.eu/development_suite/api-console/api-design/custom_microservice_get_started/) section of Mia-Platform documentation will explain in detail how to correctly deploy your project.
+Step 5 of [Microservice from template - Get started](https://docs.mia-platform.eu/development_suite/api-console/api-design/custom_microservice_get_started/#5-deploy-the-project-through-the-api-console) section of Mia-Platform documentation will explain in detail how to correctly deploy your project.
 
 Now, if you launch the following command on your terminal:
 
