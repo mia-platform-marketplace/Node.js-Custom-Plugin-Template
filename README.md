@@ -90,9 +90,9 @@ module.exports = customService(async function index(service) {
 
 Searching for the defined route: **/hello** through a **GET** request, we will execute the **hellolHandler**. Thanks to its execution, we obtain a response structured as **helloSchema**:  
 
-200 with  
-status: 200,  
-message: 'Hello World'.
+```json
+{"status":200,"message":"Hello World"}
+```
 
 After commiting these changes to your repository, we can go back to Mia Platform DevOps Console.
 
@@ -103,7 +103,7 @@ Now we need to choose a path for our endpoint and to connect this endpoint to ou
 
 After having created an endpoint to your microservice you should save the changes that you have done to your project in the DevOps console, in a similar way to what we have previously done after the microservice creation.
 
-Once all the changes that we have made are saved, we are now able to deploy our project through the API Console. Go to the **Deploy** area of the DevOps Console.  
+Once all the changes that we have made are saved, we are now able to deploy our project through the DevOps Console. Go to the **Deploy** area of the DevOps Console.  
 Once here select the environment and the branch you have worked on. When the deploy process is finished you will receveive a pop-up message that will inform you.  
 Step 5 of [Microservice from template - Get started](https://docs.mia-platform.eu/development_suite/api-console/api-design/custom_microservice_get_started/) section of Mia-Platform documentation will explain in detail how to correctly deploy your project.
 
