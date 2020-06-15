@@ -1,4 +1,3 @@
-
 # Node.js custom plugin template walkthrough
 
 This walkthrough will help you learn how to create a Node.js microservice from scratch.
