@@ -1,5 +1,7 @@
 # Node.js custom plugin template walkthrough
 
+## Service creation
+
 This walkthrough will help you learn how to create a Node.js microservice from scratch.
 
 In order to do so, access to [Mia-Platform DevOps Console](https://console.cloud.mia-platform.eu/login), create a new project and go to the **Design** area. From the Design area of your project select _Microservices_ and then create a new one, you have now reached [Mia-Platform Marketplace](https://docs.mia-platform.eu/development_suite/api-console/api-design/marketplace/)!  
@@ -39,9 +41,21 @@ module.exports = customService(async function index(service) {
 })
 ```
 
-In this file you will find the usage of `custom-plugin-lib` a [node.js](https://github.com/mia-platform/custom-plugin-lib) library developed by Mia-Platform, based on the [fastify](https://fastify.io) library. It contains configurations and functions useful for the service setup. We will now add a new route that, when visited, will print an hello message and return the HTTP response status. To do so, let's use the following function:
-`service.addRawCustomPlugin(httpVerb, path, handler, schema)`  
-to which you will pass the following parameters:
+Wonderful! You are now ready to start customizing your service! Read next section to learn how.
+
+## Adding an Hello World route
+
+Now that you have successfully created a microservice from our Node.js template you will add an *hello* route to it.
+
+As you may have noticed in the snippet of code in the previous section, you will use [custom-plugin-lib](https://github.com/mia-platform/custom-plugin-lib).  
+`custom-plugin-lib` is a [node.js](https://github.com/mia-platform/custom-plugin-lib) library developed by Mia-Platform. This library contains configurations and functions that will help you to modify your template with easiness.
+In particular, you will use the following function for our library
+
+```javascript
+service.addRawCustomPlugin(httpVerb, path, handler, schema)
+```
+
+and you will pass to it the following parameters:
 
 - `httpVerb`: "GET", the HTTP verb of the request.
 - `path`: `/hello`, the route that gives us access to the logics described in your new handler.
