@@ -1,5 +1,7 @@
 # Node.js custom plugin template walkthrough
 
+[![Build Status][github-actions-svg]][github-actions]
+
 This walkthrough will help you learn how to create a Node.js microservice from scratch.
 
 ## Create a microservice
@@ -143,3 +145,6 @@ you should see the following message:
 ```
 
 Congratulations! You have successfully learnt how to modify a blank template into an _Hello World_ Node.js microservice!
+
+[github-actions]: https://github.com/mia-platform-marketplace/Node.js-Custom-Plugin-Template/actions
+[github-actions-svg]: https://github.com/mia-platform-marketplace/Node.js-Custom-Plugin-Template/workflows/Node.js%20CI/badge.svg
