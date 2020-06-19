@@ -113,7 +113,7 @@ Visiting the defined route: **/hello** through a **GET** request, you will execu
 
 After committing these changes to your repository, you can go back to Mia Platform DevOps Console.
 
-## Expose microservice endpoint
+## Expose an endpoint to your microservice
 
 In order to access to your new microservice it is necessary to create an endpoint that targets it. Step 3 of [Microservice from template - Get started](https://docs.mia-platform.eu/development_suite/api-console/api-design/custom_microservice_get_started/#3-creating-the-endpoint) section of Mia-Platform documentation will explain in detail how to create an endpoint from the DevOps Console.
 
