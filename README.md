@@ -2,7 +2,7 @@
 
 This walkthrough will help you learn how to create a Node.js microservice from scratch.
 
-## Create microservice
+## Create a microservice
 
 In order to do so, access to [Mia-Platform DevOps Console](https://console.cloud.mia-platform.eu/login), create a new project and go to the **Design** area. From the Design area of your project select _Microservices_ and then create a new one, you have now reached [Mia-Platform Marketplace](https://docs.mia-platform.eu/development_suite/api-console/api-design/marketplace/)!  
 In the marketplace you will see a set of Examples and Templates that can be used to set-up microservices with a predefined and tested function.
@@ -47,7 +47,7 @@ module.exports = customService(async function index(service) {
 
 Wonderful! You are now ready to start customizing your service! Read next section to learn how.
 
-## Adding an Hello World route
+## Add an Hello World route
 
 Now that you have successfully created a microservice from our Node.js template you will add an *hello* route to it.
 
@@ -113,7 +113,7 @@ Visiting the defined route: **/hello** through a **GET** request, you will execu
 
 After committing these changes to your repository, you can go back to Mia Platform DevOps Console.
 
-## Expose endpoint
+## Expose microservice endpoint
 
 In order to access to your new microservice it is necessary to create an endpoint that targets it. Step 3 of [Microservice from template - Get started](https://docs.mia-platform.eu/development_suite/api-console/api-design/custom_microservice_get_started/#3-creating-the-endpoint) section of Mia-Platform documentation will explain in detail how to create an endpoint from the DevOps Console.
 
