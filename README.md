@@ -1,8 +1,8 @@
 # Node.js custom plugin template walkthrough
 
-## Service creation
-
 This walkthrough will help you learn how to create a Node.js microservice from scratch.
+
+## Create microservice
 
 In order to do so, access to [Mia-Platform DevOps Console](https://console.cloud.mia-platform.eu/login), create a new project and go to the **Design** area. From the Design area of your project select _Microservices_ and then create a new one, you have now reached [Mia-Platform Marketplace](https://docs.mia-platform.eu/development_suite/api-console/api-design/marketplace/)!  
 In the marketplace you will see a set of Examples and Templates that can be used to set-up microservices with a predefined and tested function.
@@ -20,9 +20,13 @@ You can read more about this fields in [Manage your Microservices from the Dev C
 Give your microservice the name you prefer, in this walkthrough we'll refer to it with the following name: **my-node-service-name**.
 Then, fill the other required fields and confirm that you want to create a microservice. You have now generated a *my-node-service-name* repository that is already deployed on Mia-Platform [Nexus Repository Manager](https://nexus.mia-platform.eu/) once build script in CI is successful.
 
+## Save your changes
+
 It is important to know that the microservice that you have just created is not saved yet on the DevOps Console. It is not essential to save the changes that you have made, since you will later make other modifications inside of your project in the DevOps Console.  
 If you decide to save your changes now remember to choose a meaningful title for your commit (e.g "created service my_node_service_name"). After some seconds you will be prompted with a popup message which confirms that you have successfully saved all your changes.  
 A more detailed description on how to create and save a Microservice can be found in [Microservice from template - Get started](https://docs.mia-platform.eu/development_suite/api-console/api-design/custom_microservice_get_started/#2-service-creation) section of Mia-Platform documentation.
+
+## Look inside your repository
 
 After having created your first microservice (based on this template) you will be able to access to its git repository from the DevOps Console. Inside this repository you will find an [index.js](https://github.com/mia-platform-marketplace/Node.js-Custom-Plugin-Template/blob/master/index.js) file with the following lines of code:
 
@@ -109,6 +113,8 @@ Visiting the defined route: **/hello** through a **GET** request, you will execu
 
 After committing these changes to your repository, you can go back to Mia Platform DevOps Console.
 
+## Expose endpoint
+
 In order to access to your new microservice it is necessary to create an endpoint that targets it. Step 3 of [Microservice from template - Get started](https://docs.mia-platform.eu/development_suite/api-console/api-design/custom_microservice_get_started/#3-creating-the-endpoint) section of Mia-Platform documentation will explain in detail how to create an endpoint from the DevOps Console.
 
 In particular, in this walkthrough you will create an endpoint to your *my-node-service-name*. To do so, from the Design area of your project select _Endpoints_ and then create a new endpoint.
@@ -116,9 +122,13 @@ Now you need to choose a path for your endpoint and to connect this endpoint to 
 
 After having created an endpoint to your microservice you should save the changes that you have done to your project in the DevOps console, in a similar way to what you have previously done after the microservice creation.
 
+## Deploy
+
 Once all the changes that you have made are saved, you should deploy your project through the DevOps Console. Go to the **Deploy** area of the DevOps Console.  
 Once here select the environment and the branch you have worked on and confirm your choices clicking on the *deploy* button. When the deploy process is finished you will receveive a pop-up message that will inform you.  
 Step 5 of [Microservice from template - Get started](https://docs.mia-platform.eu/development_suite/api-console/api-design/custom_microservice_get_started/#5-deploy-the-project-through-the-api-console) section of Mia-Platform documentation will explain in detail how to correctly deploy your project.
+
+## Try it
 
 Now, if you launch the following command on your terminal (remember to replace `<YOUR_PROJECT_HOST>` with the real host of your project):  
 
