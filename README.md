@@ -1,6 +1,7 @@
 # Node.js custom plugin template walkthrough
 
 [![Build Status][github-actions-svg]][github-actions]
+[![Coverage Status][coverall-svg]][coverall-io]
 
 This walkthrough will help you learn how to create a Node.js microservice from scratch.
 
@@ -148,3 +149,5 @@ Congratulations! You have successfully learnt how to modify a blank template int
 
 [github-actions]: https://github.com/mia-platform-marketplace/Node.js-Custom-Plugin-Template/actions
 [github-actions-svg]: https://github.com/mia-platform-marketplace/Node.js-Custom-Plugin-Template/workflows/Node.js%20CI/badge.svg
+[coverall-svg]: https://coveralls.io/repos/github/mia-platform-marketplace/Node.js-Custom-Plugin-Template/badge.svg?branch=BMP238
+[coverall-io]: https://coveralls.io/github/mia-platform-marketplace/Node.js-Custom-Plugin-Template?branch=BMP238
