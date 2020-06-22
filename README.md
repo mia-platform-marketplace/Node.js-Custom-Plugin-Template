@@ -149,5 +149,5 @@ Congratulations! You have successfully learnt how to modify a blank template int
 
 [github-actions]: https://github.com/mia-platform-marketplace/Node.js-Custom-Plugin-Template/actions
 [github-actions-svg]: https://github.com/mia-platform-marketplace/Node.js-Custom-Plugin-Template/workflows/Node.js%20CI/badge.svg
-[coverall-svg]: https://coveralls.io/repos/github/mia-platform-marketplace/Node.js-Custom-Plugin-Template/badge.svg?branch=BMP238
-[coverall-io]: https://coveralls.io/github/mia-platform-marketplace/Node.js-Custom-Plugin-Template?branch=BMP238
+[coverall-svg]: https://coveralls.io/repos/github/mia-platform-marketplace/Node.js-Custom-Plugin-Template/badge.svg?branch=master
+[coverall-io]: https://coveralls.io/github/mia-platform-marketplace/Node.js-Custom-Plugin-Template?branch=master
