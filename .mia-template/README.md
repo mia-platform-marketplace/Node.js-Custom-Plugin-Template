@@ -1,8 +1,4 @@
-
 # nodejs-custom-plugin
-
-[![pipeline status][pipeline]][git-link]
-[![coverage report][coverage]][git-link]
 
 ## Summary
 
@@ -85,10 +81,6 @@ docker run --name mia_template_service_name_placeholder \
   --detach \
   %NEXUS_HOSTNAME%/mia_template_image_name_placeholder
 ```
-
-[pipeline]: %GITLAB_BASE_URL%/%CUSTOM_PLUGIN_PROJECT_FULL_PATH%/badges/master/pipeline.svg
-[coverage]: %GITLAB_BASE_URL%/%CUSTOM_PLUGIN_PROJECT_FULL_PATH%/badges/master/coverage.svg
-[git-link]: %GITLAB_BASE_URL%/%CUSTOM_PLUGIN_PROJECT_FULL_PATH%/commits/master
 
 [nvm]: https://github.com/creationix/nvm
 [merge-request]: %GITLAB_BASE_URL%/%CUSTOM_PLUGIN_PROJECT_FULL_PATH%/merge_requests
