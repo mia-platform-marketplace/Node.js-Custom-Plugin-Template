@@ -123,7 +123,9 @@ In order to access to your new microservice it is necessary to create an endpoin
 In particular, in this walkthrough you will create an endpoint to your *my-node-service-name*. To do so, from the Design area of your project select _Endpoints_ and then create a new endpoint.
 Now you need to choose a path for your endpoint and to connect this endpoint to our microservice. Give to your endpoint the following path: **/greetings**. Then, specify that you want to connect your endpoint to a microservice and, finally, select *my-node-service-name*.
 
-After having created an endpoint to your microservice you should save the changes that you have done to your project in the DevOps console, in a similar way to what you have previously done after the microservice creation.
+## Save again your changes
+
+After having created an endpoint to your microservice you should **save** the changes that you have done to your project in the DevOps console, in a similar way to what you have previously done after the microservice creation.
 
 ## Deploy
 
