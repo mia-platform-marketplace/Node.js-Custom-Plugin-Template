@@ -37,7 +37,7 @@ t.test('mia_template_service_name_placeholder', async t => {
     MICROSERVICE_GATEWAY_SERVICE_NAME: 'microservice-gateway.example.org',
   })
 
-  t.tearDown(async() => {
+  t.teardown(async() => {
     await fastify.close()
   })
 
