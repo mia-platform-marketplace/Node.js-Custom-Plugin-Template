@@ -18,7 +18,7 @@
     "version": "npm run update-changelog && npm run update-docker-version && rm -fr Dockerfile.bck && git add CHANGELOG.md Dockerfile"
   },
   "dependencies": {
-    "@mia-platform/custom-plugin-lib": "^2.3.0"
+    "@mia-platform/custom-plugin-lib": "^3.1.1"
   },
   "devDependencies": {
     "@mia-platform/eslint-config-mia": "^3.0.0",
