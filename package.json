@@ -22,7 +22,7 @@
   },
   "devDependencies": {
     "@mia-platform/eslint-config-mia": "^3.0.0",
-    "eslint": "^7.32.0",
+    "eslint": "^8.2.0",
     "nock": "^13.1.4",
     "pre-commit": "^1.2.2",
     "tap": "^15.0.10"
