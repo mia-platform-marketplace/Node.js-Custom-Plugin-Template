@@ -1,0 +1,8 @@
+# Node.js Template
+
+`Node.js Template` is the best template to start creating a service in node, integrated inside your platform.  
+
+This template leverages Mia Platform [custom-plugin-lib](https://github.com/mia-platform/custom-plugin-lib).  
+`custom-plugin-lib` is a [node.js](https://github.com/mia-platform/custom-plugin-lib) library developed by Mia-Platform. This library contains configurations and functions that will help you to modify your template with easiness.
+
+If you want to learn how to modify this template and create your node microservice with custom logic, follow this [walkthrough](./walkthrough).
