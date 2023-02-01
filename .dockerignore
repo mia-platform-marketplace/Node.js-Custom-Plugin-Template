@@ -13,6 +13,7 @@ docs
 *.log*
 .gitignore
 .gitlab-ci.yml
+.npmrc
 .nvmrc
 .yarn-integrity
 Dockerfile
